@@ -1,0 +1,34 @@
+{
+  "name": "brdlf.github.io",
+  "version": "1.0.0",
+  "description": "Little Website",
+  "source": [
+    "./src/index.html",
+    "./src/portfolio/index.html"
+  ],
+  "scripts": {
+    "dev": "parcel --dist-dir ./dev",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "build": "parcel build"
+  },
+  "targets": {
+    "default": {
+      "distDir": "./docs"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BRDLF/brdlf.github.io.git"
+  },
+  "author": "Abigail Fassl",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.4"
+  }
+}
